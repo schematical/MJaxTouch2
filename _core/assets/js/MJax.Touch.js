@@ -1,0 +1,6 @@
+MJax.Touch = {
+    Controls:{},
+    Events:{
+
+    }
+};
