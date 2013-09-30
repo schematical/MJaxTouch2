@@ -7,8 +7,13 @@ define('__MJAX_TOUCH_2_CORE__', __MJAX_TOUCH_2__ . '/_core');
 define('__MJAX_TOUCH_2_CORE_CTL__', __MJAX_TOUCH_2_CORE__ . '/ctl');
 define('__MJAX_TOUCH_2_CORE_MODEL__', __MJAX_TOUCH_2_CORE__ . '/model');
 define('__MJAX_TOUCH_2_CORE_VIEW__', __MJAX_TOUCH_2_CORE__ . '/view');
+define('__MJAX_TOUCH_2_CORE_ASSETS__', __MJAX_TOUCH_2_CORE__ . '/assets');
 
 define("__MJAX_TOUCH_2_CORE_ASSET_URL__", MLCApplication::GetAssetUrl('', 'MJaxTouch2'));
 
 MLCApplicationBase::$arrClassFiles['MJaxTouchForm'] = __MJAX_TOUCH_2_CORE_CTL__ . '/MJaxTouchForm.class.php';
+
+MLCApplicationBase::$arrClassFiles['MJaxListview'] = __MJAX_TOUCH_2_CORE_CTL__ . '/MJaxListview.class.php';
+
+require_once(__MJAX_TOUCH_2_CORE_CTL__ . '/_events.inc.php');
 
