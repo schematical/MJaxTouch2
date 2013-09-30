@@ -52,7 +52,7 @@ MJax.Touch = {
                 // so set the dataUrl option to the URL for the category
                 // we just loaded.
                 options.dataUrl = 'x';
-
+                MJax.FormData.AttachControls();
                 // Now call changePage() and tell it to switch to
                 // the page we just modified.
                 $.mobile.changePage( $page, options );
